@@ -1,7 +1,9 @@
 ﻿using ISOBuilder.Helpers;
+using ISOBuilder.Views;
 using Microsoft.UI;
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Windowing;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Windows.UI;
 using Windows.UI.ViewManagement;
@@ -16,6 +18,7 @@ public sealed partial class MainWindow : WindowEx
     public MainWindow()
     {
         this.InitializeComponent();
+        
         SystemBackdrop = new MicaBackdrop()
         {
             Kind = MicaKind.BaseAlt

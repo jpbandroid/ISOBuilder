@@ -21,4 +21,13 @@ public sealed partial class MainPage : Page
     {
         this.Frame.Navigate(typeof(SettingsPage));
     }
+
+    public async void OpenDialog()
+    {
+        WelcomeDialog dialog = new()
+        {
+            XamlRoot = this.XamlRoot
+        };
+        await dialog.ShowAsync();
+    }
 }
