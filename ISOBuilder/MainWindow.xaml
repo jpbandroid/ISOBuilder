@@ -10,7 +10,8 @@
     MinHeight="500"
     PersistenceId="MainWindow"
     mc:Ignorable="d">
-    <Window.SystemBackdrop>
-        <MicaBackdrop/>
-    </Window.SystemBackdrop>
+    <Grid>
+        <Border BorderThickness="1"/>
+        <TextBlock Text="ISO Builder" Margin="15, 5, 15, 15"/>
+    </Grid>
 </windowex:WindowEx>

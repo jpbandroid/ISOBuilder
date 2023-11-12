@@ -10,7 +10,7 @@
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
     </Page.Resources>
-    <Grid>
+    <Grid Padding="0,50,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
             <RowDefinition Height="*" />
@@ -26,7 +26,7 @@ Style="{StaticResource PageTitleStyle}" RelativePanel.RightOf="back"/>
         </RelativePanel>
         <StackPanel
             Grid.Row="1" 
-            x:Name="ContentArea">
+            x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
             <TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />
             <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
                 <TextBlock x:Uid="Settings_Theme" />

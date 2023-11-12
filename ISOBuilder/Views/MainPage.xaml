@@ -15,12 +15,11 @@
         <RelativePanel Grid.Row="0">
             <TextBlock
     Text="ISO Builder"
-    Style="{StaticResource PageTitleStyle}" 
-                RelativePanel.AlignLeftWithPanel="True"/>
-            <AppBarButton Icon="Setting" Click="AppBarButton_Click" RelativePanel.AlignRightWithPanel="True"></AppBarButton>
+                RelativePanel.AlignLeftWithPanel="True" Margin="15, 5, 15, 15"/>
         </RelativePanel>
 
         <Grid Grid.Row="1">
+            <AppBarButton Icon="Setting" Click="AppBarButton_Click" HorizontalAlignment="Right"></AppBarButton>
             <Button Content="Build ISO" FontSize="24" Style="{ThemeResource AccentButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
         
