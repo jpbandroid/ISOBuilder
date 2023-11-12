@@ -16,10 +16,14 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock
-            Grid.Row="0"
-            x:Uid="Settings_Title"
-            Style="{StaticResource PageTitleStyle}" />
+        <RelativePanel Grid.Row="0">
+            <AppBarButton Icon="Back" Click="AppBarButton_Click" RelativePanel.AlignLeftWithPanel="True" x:Name="back"></AppBarButton>
+            <TextBlock
+x:Uid="Settings_Title"
+Text="Settings"
+Style="{StaticResource PageTitleStyle}" RelativePanel.RightOf="back"/>
+            
+        </RelativePanel>
         <StackPanel
             Grid.Row="1" 
             x:Name="ContentArea">

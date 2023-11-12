@@ -16,4 +16,9 @@ public sealed partial class MainPage : Page
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
     }
+
+    private void AppBarButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    {
+        this.Frame.Navigate(typeof(SettingsPage));
+    }
 }

@@ -13,10 +13,13 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock
-            Grid.Row="0"
-            x:Uid="Main_Title"
-            Style="{StaticResource PageTitleStyle}" />
+        <RelativePanel Grid.Row="0">
+            <TextBlock
+    Text="ISO Builder"
+    Style="{StaticResource PageTitleStyle}" 
+                RelativePanel.AlignLeftWithPanel="True"/>
+            <AppBarButton Icon="Setting" Click="AppBarButton_Click" RelativePanel.AlignRightWithPanel="True"></AppBarButton>
+        </RelativePanel>
 
         <Grid Grid.Row="1">
             
