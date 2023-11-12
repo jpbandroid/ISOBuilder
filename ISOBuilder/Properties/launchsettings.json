@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "ISOBuilder (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "ISOBuilder (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
